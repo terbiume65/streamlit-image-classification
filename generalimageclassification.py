@@ -311,6 +311,8 @@ if train:
 
     else:
         status_train.error("Failed to train model - Please confirm that all previous steps have been completed")
+if trained["trained"]==True:
+    status_train.success("Training complete")
 
 
 st.subheader("Predicting with the Built Model") 
