@@ -325,7 +325,7 @@ if predict:
             prediction_image = Image.open(prediction_raw)
             prediction_array = resize(threechannels(np.array(prediction_image)), (150, 150),anti_aliasing=True)
             prediction_array = np.expand_dims(prediction_array,axis=0)
-            prediction_class=int(model.predict_classes(prediction_array))
+            prediction_class=int(model.predict_classes(prediction_array))+1
             status_predict.info("The model predicted the image to be of class "+str(prediction_class))
         else:
             status_predict.error("No image is uploaded")
