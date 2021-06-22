@@ -13,4 +13,6 @@ In case you still can't conceptualize what image classification is, here are som
 
 Be creative, think of something useful and interesting to train a model with and predict!
 ### Credits
+This app is being hosted online by streamlit. You may use it [here](https://share.streamlit.io/terbiume65/streamlit-image-classification/main/generalimageclassification.py)
+### Credits
 I encountered a lot of problems with the slightly complicated issue of caching in Streamlit's workflow. Streamlit re-runs and re-computes all variables whenever user input changes, which means the user's model creation process is often accidentally reset. Thanks to various discussion and answers offered in the incredibly friendly Streamlit community, I did not give up on the code and managed to finish this app, which is mostly working. Kudos to especially [@_okld](https://github.com/okld) whose answers in the forum are very helpful. Some of his code, in the form of answers to questions raised in the Streamlit forum, have been used to solve some of my key issues and  finish this code.
